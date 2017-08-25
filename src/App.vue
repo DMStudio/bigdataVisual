@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TopBar></TopBar>
-    <router-view></router-view>
+    <map></map>
     <ButtonBlock></ButtonBlock>
   </div>
 </template>
@@ -9,12 +9,18 @@
 <script>
 import TopBar from './components/top-bar.vue'
 import ButtonBlock from './components/button-block.vue'
+import Map from './components/map.vue'
+import Platform from './components/platform.vue'
+import Deal from './components/deal.vue'
 
 export default {
   name: 'app',
   components: {
     TopBar,
-    ButtonBlock
+    ButtonBlock,
+    Map,
+    Platform,
+    Deal
   }
 }
 </script>
